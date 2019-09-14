@@ -12,24 +12,52 @@
     <title>Google Homepage</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section>
-        <nav>
+        <!-- Images -->
+        <!-- Microphone -->
+        <!-- https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png -->
+        <!-- Grid -->
 
+        <!-- hover links = underline -->
+        <section>
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="https://sriiraj.github.io/google-homepage/img/googapps.png" alt="Grid"></a></li>
+                <li><a href="#"><img src ="https://i.stack.imgur.com/34AD2.jpg" alt=" User Image"></a></li>
+            </ul>
         </nav>
     </section>
 
     <section>
         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <input type="text" name="search">
+        <form action="#" method="POST">
+            <input type="text" id="search" name="search">
+            <label for="search"></label>
+            <input type="submit" value="Google Search">
+            <input type="submit" value="I'm Feeling Lucky">
+        </form>
+        <p>Google offered in: <a href="#">Nordic</a></p>
     </section>
 
     <section>
         <div class="footer">
-            
+            <ul>
+                <li><a href="#">Viking Lands</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How Search works</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
         </div>
     </section>
     <!--[if lt IE 7]>
