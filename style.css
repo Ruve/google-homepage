@@ -5,15 +5,92 @@
 
 html,body{
     height: 100%;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: lighter;
 }
 
-nav li{
-    position: relative;
-    display: inline;
+.container{
+    width: 100%;
+    margin: 0 auto;
 }
 
-li{
-    list-style-type: none;
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header li{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.nav-left{
+    float: left; 
+}
+
+.nav-right {
+   float: right; 
+   margin-right: 10px;
+}
+
+.dots{
+    margin-top: -4px;
+}
+
+.profile{
+    width: 2em;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.main{
+    text-align: center;
+    height: 100%;
+    margin-top: 12em;
+}
+
+.logo{
+    height: 8em;
+}
+
+.search-bar{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    height: 40px;
+    width: 500px;
+    border:1px solid #eaeaea;
+    outline:none;
+    border-radius: 250px;
+    margin-top: 25px;
+}
+
+.search-bar:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.button{
+    padding-top: 10px;
+}
+
+input[type=submit]{
+    border: none;
+    background-color:#f2f2f2;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 0 10px;
+    border-radius: 6px;
+}
+
+input[type=submit]:hover{
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid lightgrey;
+}
+
+ul li{
+    display: inline-block;
 }
 
 a, a:visited, a:active{
@@ -25,13 +102,31 @@ a:hover{
     text-decoration: underline;
 }
 
+.footer::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
 .footer{
-    position: absolute;
+    position: fixed;
     height: 50px;
     bottom: 0px;
     width: 100%;
+    background: #f2f2f2
+}
+.footer-left{
+    float:left;
+
+}
+
+.footer-right{
+    float: right;
 }
 
 .footer li{
-    display: inline;
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 20px;
+    margin-right: 10px
 }
